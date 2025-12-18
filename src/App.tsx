@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="container">
       <div className="content">
-
         <img className="perfil cursorDefault" src={Perfil} alt="Perfil" />
 
         <img className="rings ring1 cursorDefault" src={Rings} alt="Rings 1" />
@@ -26,7 +25,7 @@ function App() {
               rel="noopener noreferrer"
               title="Github"
             >
-               <img src={GithubIcon} alt="Github" />
+              <img src={GithubIcon} alt="Github" />
             </a>
 
             <a
@@ -49,67 +48,109 @@ function App() {
             construir websites com boas práticas e visual atrativo.
           </p>
           <br />
-           <a
-              href="https://www.linkedin.com/in/ruanvalenca/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="LinkedIn"
-            >
-          <span 
-          className="contactRequest">Converse Comigo</span>
+          <a
+            href="https://www.linkedin.com/in/ruanvalenca/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+          >
+            <span className="contactRequest">Converse Comigo</span>
           </a>
         </section>
         <hr className="divider" />
         <section className="skills">
           <h3>HTML</h3>
           <h3>CSS</h3>
-          <h3>JAVASCRIPT</h3>
+          <h3>JAVASCRIPT/TYPESCRIPT</h3>
           <h3>REACT</h3>
           <h3>STYLED</h3>
-          <h3>TYPESCRIPT</h3>
+          <h3>NODE</h3>
         </section>
 
         <div className="titleProjects">
           <p className="title">Projetos</p>
 
-           <a
-              href="https://www.linkedin.com/in/ruanvalenca/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="LinkedIn"
-            >
-          <span 
-          className="contactRequest">Converse Comigo</span>
+          <a
+            href="https://www.linkedin.com/in/ruanvalenca/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+          >
+            <span className="contactRequest">Converse Comigo</span>
           </a>
         </div>
         <div className="projectsGrid">
-          <a
-            href="https://throwdown-two.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="projectCard img1"
-          ></a>
+          {/* Projeto 1 */}
+          <div className="projectCardContainer">
+            <div className="projectCardInner">
+              <div className="projectCardFront img3"></div>
+              <div className="projectCardBack img3">
+                <h3>Delishare</h3>
+                <p>App de receitas com feed e API própria.</p>
+                <a
+                  href="https://delishare-app.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VER PROJETO <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
 
-          <a
-            href="https://ip-tracker-delta-self.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="projectCard img2"
-          ></a>
+          {/* Projeto 2 */}
+          <div className="projectCardContainer">
+            <div className="projectCardInner">
+              <div className="projectCardFront img4"></div>
+              <div className="projectCardBack img4">
+                <h3>Absolute Cinema</h3>
+                <p>Catálogo de filmes utilizando API externa.</p>
+                <a
+                  href="https://absolute-cinema-six.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VER PROJETO <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
 
-          <a
-            href="https://viajebem.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="projectCard img3"
-          ></a>
+          {/* Projeto 3 */}
+          <div className="projectCardContainer">
+            <div className="projectCardInner">
+              <div className="projectCardFront img1"></div>
+              <div className="projectCardBack img1">
+                <h3>Throwdown</h3>
+                <p>Jogo casual e duelo contra bot.</p>
+                <a
+                  href="https://throwdown-two.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VER PROJETO <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
 
-          <a
-            href="https://absolute-cinema-six.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="projectCard img4"
-          ></a>
+          {/* Projeto 4 */}
+          <div className="projectCardContainer">
+            <div className="projectCardInner">
+              <div className="projectCardFront img2"></div>
+              <div className="projectCardBack img2">
+                <h3>IP Tracker</h3>
+                <p>Rastreador de endereços IP com mapa interativo.</p>
+                <a
+                  href="https://ip-tracker-delta-self.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VER PROJETO <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <footer>
@@ -130,7 +171,7 @@ function App() {
               rel="noopener noreferrer"
               title="Github"
             >
-               <img src={GithubIcon} alt="Github" />
+              <img src={GithubIcon} alt="Github" />
             </a>
 
             <a

@@ -285,7 +285,7 @@ footer {
   background-image: url("./assets/projeto2.png");
 }
 .img3 {
-  background-image: url("./assets/projeto3.png");
+  background-image: url("./assets/delishare.png");
 }
 .img4 {
   background-image: url("./assets/projeto4.png");
@@ -432,5 +432,146 @@ footer {
   .contactRequest {
     margin: 1rem 0;
     display: inline-block;
+  }
+}
+
+.introduction, .skills, .projectsGrid {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.rings {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Diferencie o tempo para não subirem todos juntos */
+.ring2 { animation-duration: 8s; }
+.ring3 { animation-duration: 5s; }
+
+.projectCard {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(65, 67, 156, 0.3); /* Usa sua cor --blue */
+}
+
+.contactRequest {
+  transition: all 0.3s ease;
+}
+
+.contactRequest:hover {
+  letter-spacing: 1px;
+}
+
+.skills > *:nth-child(1) { animation-delay: 0.1s; }
+.skills > *:nth-child(2) { animation-delay: 0.2s; }
+.skills > *:nth-child(3) { animation-delay: 0.3s; }
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding-top: 4rem;
+}
+
+.projectCardContainer {
+  height: 350px;
+  perspective: 1000px;
+}
+
+.projectCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.projectCardContainer:hover .projectCardInner {
+  transform: rotateY(180deg);
+}
+
+.projectCardFront,
+.projectCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.projectCardFront {
+  background-size: cover;
+  background-position: center;
+}
+
+.projectCardBack {
+  background-color: rgba(0, 0, 0, 0.85);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.projectCardBack h3 {
+  color: var(--white); 
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.projectCardBack p {
+  font-size: 0.9rem;
+  color: #efefef;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.projectCardBack a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.projectCardBack a:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 1024px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
   }
 }
