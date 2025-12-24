@@ -55,15 +55,16 @@ function App() {
               </li>
               <li>
                 Gerenciamento de estado global eficiente com{" "}
-                <strong>Zustand e Context API</strong>.
+                <strong>Zustand, Redux e Context API</strong>.
               </li>
               <li>
-                Desenvolvimento do Portal do Colaborador, automatizando
-                processos de RH.
+                Desenvolvimento do Portal Internos e Portal do Aluno,
+                automatizando processos de RH e deixando a usabilidade mais
+                eficiente.
               </li>
               <li>
-                Foco em <strong>performance e acessibilidade</strong> (Clean
-                Code e Refatoração).
+                Foco em <strong>performance e otimização</strong> (Clean Code e
+                Refatoração).
               </li>
             </ul>
           </div>
@@ -110,9 +111,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"
-          >
-            <span className="contactRequest">Converse Comigo</span>
-          </a>
+          ></a>
         </div>
         <div className="projectsGrid">
           <div className="projectCardContainer">
