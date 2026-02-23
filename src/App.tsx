@@ -217,9 +217,8 @@ function App() {
           <div className="footerText">
             <h1>Contato</h1>
             <p>
-              Atualmente baseado em <strong>Belo Horizonte/MG</strong>, estou
-              disponível para projetos e oportunidades que busquem um
-              desenvolvedor focado em <strong>qualidade de código</strong>.
+              Atualmente em <strong>Belo Horizonte/MG</strong>, estou
+              disponível para projetos e oportunidades na área.
             </p>
             <a href="mailto:ruangobira@gmail.com" className="emailLink">
               ruangobira@gmail.com
