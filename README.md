@@ -1,69 +1,35 @@
-# React + TypeScript + Vite
+# Portfólio 2026 — Ruan Carlos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal com React, TypeScript, Vite e GSAP. Identidade em preto, off-white e verde-água, layout responsivo e animações que respeitam a preferência por movimento reduzido.
 
-Currently, two official plugins are available:
+## Rodar localmente
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Requer Node.js 22.12+ (ou 20.19+).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+npm ci
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Build de produção
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+npm run build
+npm run preview
 ```
+
+## Publicação
+
+O repositório RuanValenca/Portfolio está integrado à Vercel. A configuração de produção usa o comando `npm run build` e a pasta de saída `dist`.
+
+## Conteúdo e personalização
+
+- `src/App.tsx`: estrutura, animações e experiências em Servcom, Faculdade Famart e Videobrax.
+- `src/data.ts`: projetos, tecnologias e descrições.
+- `src/App.css`: estilos, responsividade e variável de cor `--accent`.
+- `src/assets`: imagens dos projetos e retrato.
+- `index.html`: título e metadados.
+
+Desktop: experiências em painéis e projetos com scroll horizontal. Celular: experiências em sequência e projetos com deslize ou botões. O modo de movimento reduzido mantém o conteúdo acessível sem animações.
+
+Projetos: Delishare, Absolute Cinema, Throwdown e IP Tracker. Conhecimentos incluem React, TypeScript, JavaScript, HTML/CSS, WordPress, Elementor, Node/APIs e Git.
